@@ -14,7 +14,7 @@ const config = {
     },
     { file: module, format: 'es' }
   ],
-  external: ['got', 'path'],
+  external: ['ky', 'url-join', 'node-fetch'],
 
   plugins: [
     alias({
