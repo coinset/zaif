@@ -1,5 +1,6 @@
-import a from 'node-fetch'
-
-a('https://api.zaif.jp/api/1/currencies/btc').then(async (e) => {
-  console.log(await e.json())
-})
+export { getCurrencies } from './currencies'
+export { getCurrencyPairs } from './currency-pairs'
+export { getDepth } from './depth'
+export { getLastPrice } from './last-price'
+export { getTicker } from './ticker'
+export { getTrades } from './trades'
