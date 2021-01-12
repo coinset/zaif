@@ -20,7 +20,3 @@ export const getTicker = async (pair: ZaifPair): Promise<GetResponse> => {
 
   return json
 }
-
-getTicker('btc_jpy').then((e) => {
-  console.log(e)
-})

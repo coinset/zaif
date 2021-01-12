@@ -14,7 +14,3 @@ export const getLastPrice = async (pair: ZaifPair): Promise<GetResponse> => {
 
   return json
 }
-
-getLastPrice('btc_jpy').then((e) => {
-  console.log(e)
-})
