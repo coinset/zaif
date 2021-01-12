@@ -1,6 +1,6 @@
 {
   "name": "zaif-client",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "Zaif API Client for node",
   "keywords": [
     "zaif"
