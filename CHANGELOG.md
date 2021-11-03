@@ -1,3 +1,15 @@
+# v1.0.0-beta.1 (2021-11-03)
+
+## ✨ New Features
+
+- [`13973f6`](https://github.com/TomokiMiyauci/zaif-client/commit/13973f6) (zaif-client) Add public API Client
+- [`72d1842`](https://github.com/TomokiMiyauci/zaif-client/commit/72d1842) (zaif-client) Add Public API
+- [`24df584`](https://github.com/TomokiMiyauci/zaif-client/commit/24df584) Change public API interface
+
+## 🐛 Bug Fixes
+
+- [`413a868`](https://github.com/TomokiMiyauci/zaif-client/commit/413a868) Fix bugs
+
 # [v1.0.0-beta.3](https://github.com/TomokiMiyauci/coincheck-client/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2021-11-02)
 
 ## ✨ New Features
