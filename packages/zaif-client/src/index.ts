@@ -1,6 +1,0 @@
-export { getCurrencies } from './currencies'
-export { getCurrencyPairs } from './currency-pairs'
-export { getDepth } from './depth'
-export { getLastPrice } from './last-price'
-export { getTicker } from './ticker'
-export { getTrades } from './trades'
