@@ -10,14 +10,11 @@ const jsonFetch = async <T>(
 ): Promise<T> => {
   const res = await fetch(url, init)
 
-  console.log(res)
-
   if (!res.ok) {
     throw Error(res.statusText)
   }
 
   const text = await res.text()
-  console.log(text)
 
   return JSON.parse(text, options?.parseJson)
 }

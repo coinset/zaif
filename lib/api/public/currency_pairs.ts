@@ -13,6 +13,7 @@ type CurrencyPairsOptions = {
 type CurrencyPairsResponse = CurrencyPairInfo[]
 
 type CurrencyPairInfo = {
+  id: number
   name: string
   title: string
   currency_pair: string
