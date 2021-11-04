@@ -1,3 +1,9 @@
+# [v1.0.0-beta.2](https://github.com/coinset/zaif/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2021-11-04)
+
+## ✨ New Features
+
+- [`8db8150`](https://github.com/coinset/zaif/commit/8db8150) Rename package name
+
 # v1.0.0-beta.1 (2021-11-03)
 
 ## ✨ New Features
