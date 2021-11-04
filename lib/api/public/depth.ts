@@ -6,8 +6,6 @@ import { join } from 'path'
 
 import type { PublicAPI } from '@/shared/types'
 
-const ALL_Depth_PAIRS: ZaifPair[] = ['btc_jpy']
-
 type DepthOptions = {
   pair: ZaifPair
 }
@@ -35,5 +33,5 @@ const fetchDepth: PublicAPI<DepthOptions, DepthResponse> = ({ pair }, init) => {
   return jsonFetch(url, init)
 }
 
-export { fetchDepth, ALL_Depth_PAIRS }
+export { fetchDepth }
 export type { DepthResponse }

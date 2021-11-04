@@ -6,8 +6,6 @@ import { join } from 'path'
 
 import type { PublicAPI } from '@/shared/types'
 
-const ALL_TICKER_PAIRS: ZaifPair[] = ['btc_jpy']
-
 type TickerOptions = {
   pair: ZaifPair
 }
@@ -36,5 +34,5 @@ const fetchTicker: PublicAPI<TickerOptions, TickerResponse> = (
   return jsonFetch(url, init)
 }
 
-export { fetchTicker, ALL_TICKER_PAIRS }
+export { fetchTicker }
 export type { TickerResponse }
