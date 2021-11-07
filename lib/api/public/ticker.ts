@@ -35,4 +35,4 @@ const fetchTicker: PublicAPI<TickerOptions, TickerResponse> = (
 }
 
 export { fetchTicker }
-export type { TickerResponse }
+export type { TickerOptions, TickerResponse }

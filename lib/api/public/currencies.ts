@@ -7,7 +7,8 @@ import { join } from 'path'
 import type { PublicAPI } from '@/shared/types'
 
 type CurrenciesOptions = {
-  symbol: ZaifSymbol | 'all'
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  symbol: ZaifSymbol | 'all' | (string & {})
 }
 
 type CurrenciesResponse = {

@@ -4,7 +4,7 @@ import type { ZaifPair } from '@/shared/types/currency'
 
 import { join } from 'path'
 
-import type { PublicAPI, AskBid } from '@/shared/types'
+import type { PublicAPI } from '@/shared/types'
 
 type TradesOptions = {
   pair: ZaifPair
@@ -15,8 +15,9 @@ type TradesResponse = {
   price: number
   amount: number
   tid: number
-  currency_pair: string
-  trade_type: AskBid
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  currency_pair: ZaifPair | (string & {})
+  trade_type: 'ask' | 'bid'
 }[]
 
 /**

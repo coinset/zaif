@@ -1,4 +1,5 @@
 import { fetchCurrencyPairs } from '@/api/public/currency_pairs'
+import { ALL_ZAIF_PAIRS } from '@/constants/pair'
 
 describe('fetchCurrencyPairs', () => {
   it('should return currency pairs info', async () => {
@@ -28,7 +29,7 @@ describe('fetchCurrencyPairs', () => {
         expect(is_token).toBeBoolean()
         expect(id).toBeNumber()
         expect(item_japanese).toBeString()
-        expect(currency_pair).toBeString()
+        expect(currency_pair).toBeOneOf(ALL_ZAIF_PAIRS)
         expect(seq).toBeNumber()
         expect(title).toBeString()
         expect(aux_unit_point).toBeNumber()

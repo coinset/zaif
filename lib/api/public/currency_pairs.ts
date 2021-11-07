@@ -16,7 +16,8 @@ type CurrencyPairInfo = {
   id: number
   name: string
   title: string
-  currency_pair: string
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  currency_pair: ZaifPair | (string & {})
   description: string
   is_token: boolean
   event_number: number

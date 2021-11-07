@@ -10,16 +10,12 @@ type DepthOptions = {
   pair: ZaifPair
 }
 
-/**
- * Set of price and amount
- *
- * @remarks First is price, second is amount
- */
-type PriceAmountSet = [number, number]
+type Price = number
+type Amount = number
 
 type DepthResponse = {
-  asks: PriceAmountSet[]
-  bids: PriceAmountSet[]
+  asks: [Price, Amount][]
+  bids: [Price, Amount][]
 }
 
 /**
@@ -34,4 +30,4 @@ const fetchDepth: PublicAPI<DepthOptions, DepthResponse> = ({ pair }, init) => {
 }
 
 export { fetchDepth }
-export type { DepthResponse }
+export type { DepthOptions, DepthResponse }
