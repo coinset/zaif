@@ -1,18 +1,28 @@
-import type { StrictExtract } from '@/utils/types'
 import type {
   jpy,
   MOSAIC_CMS,
   ERC20_CMS,
   btc,
   ETH,
-  xem,
-  mona,
   XYM,
   BCH,
-  all_pairs
+  Pair,
+  xym,
+  cicc,
+  ncxc,
+  eth,
+  erc20_cms,
+  mona,
+  bch,
+  xem,
+  fscc,
+  xcp,
+  mosaic_cms,
+  jpyz,
+  zaif
 } from 'cryptocurrency-types'
 
-type HandingSymbol =
+type ZaifSymbol =
   | jpy
   | MOSAIC_CMS
   | ERC20_CMS
@@ -23,36 +33,44 @@ type HandingSymbol =
   | XYM
   | BCH
 
-type ZaifSymbol = HandingSymbol
-
-type ZaifPair = StrictExtract<
-  all_pairs,
-  | 'ncxc_btc'
-  | 'cicc_jpy'
-  | 'jpyz_jpy'
-  | 'btc_jpy'
-  | 'xcp_btc'
-  | 'zaif_jpy'
-  | 'erc20.cms_jpy'
-  | 'xym_btc'
-  | 'mona_btc'
-  | 'zaif_btc'
-  | 'bch_btc'
-  | 'eth_jpy'
-  | 'eth_btc'
-  | 'bch_jpy'
-  | 'mosaic.cms_btc'
-  | 'xem_btc'
-  | 'fscc_btc'
-  | 'cicc_btc'
-  | 'xcp_jpy'
-  | 'xym_jpy'
-  | 'mosaic.cms_jpy'
-  | 'fscc_jpy'
-  | 'xem_jpy'
-  | 'erc20.cms_btc'
-  | 'ncxc_jpy'
-  | 'mona_jpy'
->
+type ZaifPair =
+  | Pair<
+      | xym
+      | cicc
+      | ncxc
+      | eth
+      | erc20_cms
+      | mona
+      | bch
+      | xem
+      | fscc
+      | xcp
+      | btc
+      | mosaic_cms
+      | jpyz
+      | zaif,
+      jpy
+    >
+  | Pair<
+      | eth
+      | cicc
+      | xcp
+      | mosaic_cms
+      | fscc
+      | ncxc
+      | xem
+      | mona
+      | zaif
+      | xym
+      | bch
+      | erc20_cms,
+      btc
+    >
+  | Pair<'csbtc', btc>
+  | Pair<'cscmsxem', mosaic_cms>
+  | Pair<'cszaif', zaif>
+  | Pair<'csxem', xem>
+  | Pair<'cseth', eth>
+  | Pair<'cscmseth', erc20_cms>
 
 export type { ZaifSymbol, ZaifPair }

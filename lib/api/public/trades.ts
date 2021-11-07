@@ -1,10 +1,9 @@
 import { BASE_URL, TRADES } from '@/constants/api'
 import { jsonFetch } from '@/shared/fetch'
 import type { ZaifPair } from '@/shared/types/currency'
+import type { PublicAPI } from '@/shared/types/fetch'
 
 import { join } from 'path'
-
-import type { PublicAPI } from '@/shared/types'
 
 type TradesOptions = {
   pair: ZaifPair

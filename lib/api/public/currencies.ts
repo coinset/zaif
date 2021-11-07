@@ -1,10 +1,9 @@
 import { BASE_URL, CURRENCIES } from '@/constants/api'
 import { jsonFetch } from '@/shared/fetch'
 import type { ZaifSymbol } from '@/shared/types/currency'
+import type { PublicAPI } from '@/shared/types/fetch'
 
 import { join } from 'path'
-
-import type { PublicAPI } from '@/shared/types'
 
 type CurrenciesOptions = {
   // eslint-disable-next-line @typescript-eslint/ban-types
