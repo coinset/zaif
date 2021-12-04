@@ -1,3 +1,10 @@
+# [1.0.0-beta.3](https://github.com/coinset/zaif/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2021-12-04)
+
+
+### Features
+
+* switch code base to deno ([d817dd3](https://github.com/coinset/zaif/commit/d817dd372f807d6c85ea3b9d6a53e2affa2e535c))
+
 # [v1.0.0-beta.2](https://github.com/coinset/zaif/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2021-11-04)
 
 ## ✨ New Features
